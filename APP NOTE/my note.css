@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,600&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color:  #a7a19ea8;
+  font-family: 'Architects Daughter', cursive;
+}
+
+button{
+  padding: 17px;
+  outline: none;
+  margin-top: 20px;
+  margin-left: 5px;
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: 10px;
+  background: rgb(223, 182, 70);
+  border: 1px solid rgb(223, 182, 70);
+}
+
+button:hover{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container{
+  width: 95%;
+  margin: auto;
+  position: initial;
+}
+
+.nav{
+  color: rgb(197, 121, 35);
+  padding: 30px 0;
+  margin: 10;
+  text-shadow: 1px 1px rgb(167, 74, 21);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.createBox{
+  position:relative;
+  left: 50%;
+  top: 20;
+  margin-left: -160px;
+  z-index: 1;
+  width: 300px;
+  height: 400px;
+  outline: none;
+}
+
+.createBox textarea{
+  width: 275px;
+  height: 275px;
+  padding: 25px;
+  font-family: inherit;
+  outline: none;
+  resize: none;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
+}
+
+.notes{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.note{
+  width:250px;
+  height:250px;
+  padding:25px;
+  transition: 2s;
+  cursor: pointer;
+  overflow-wrap: break-word;
+  
+}
+
+.note h1{
+  font-size: 1.5rem;
+}
+
+@media(max-width:768px){
+  .nav{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media(max-width:480px){
+  .createBox{
+    width: 100%;
+  }
+
+}
+
+.footer {
+    text-decoration: none;
+    background-color:69493a8 ; 
+    color: rgb(150, 77, 10);
+    
+}
+.footer a{
+    text-decoration: none;
+    color: rgb(150, 77, 10);
+}   
+.footer a:hover{
+    text-decoration: none;
+    color: #e49944;
+} 
+.social ul{
+    margin-top:20 ;
+    list-style-type: none;
+}
+.social ul li{
+    display: inline-block;
+    
+    padding: 1%;
+}
