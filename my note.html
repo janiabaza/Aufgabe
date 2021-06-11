@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="my note.css">
+  <title>App talking Note</title>
+</head>
+<body>
+    <div class="main-contain"></div>
+
+  <header>
+    <div class="container">
+      <div class="nav">
+        <div class="container text-left">
+          <h1><a href="#" title="Logo">
+            <img src="image/Bild7.png" alt="App Logo" class="img-responsive"></a></i> meine Notizen</h1>
+        </div>
+        <div>
+          <button onclick="createNote()"> ausblenden/erstellen</button>
+          <button onclick="deleteNote()">löschen</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="createBox">
+      <textarea placeholder="schreib mal..." id="user-input" maxlength="300" style="font-size: 1.5rem;"></textarea>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="notes"></div>
+  </div>
+
+<section class="footer">
+    <div class="container text-left">
+        <p>erstelt von  <a href="#">Jinan Al Khatib</a> -2021</p>
+        </div><section class="social">
+            <div class="container text-center">
+                <ul>
+                    <li>
+                        <a href="#"><img src="https://img.icons8.com/fluent/50/000000/facebook-new.png"/></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="https://img.icons8.com/fluent/48/000000/twitter.png"/></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+</section> 
+  
+  <script src="script.js"></script>
+</body>
+</html>
